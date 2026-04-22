@@ -1,0 +1,74 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body { 
+    background: radial-gradient(circle at center, #0e1a14 0%, #050505 100%);
+    color: #fff; font-family: 'Inter', sans-serif; min-height: 100vh; transition: background 0.8s ease; overflow-x: hidden;
+}
+
+header { padding: 30px 10%; display: flex; justify-content: center; }
+.nav-container { display: flex; justify-content: space-between; align-items: center; width: 100%; max-width: 1200px; }
+.logo { font-weight: 900; font-size: 24px; color: #4ade80; transition: color 0.6s ease; }
+.logo span { color: #fff; }
+nav ul { list-style: none; display: flex; gap: 15px; }
+
+.nav-btn {
+    background: #1a1a1a; padding: 10px 25px; border-radius: 25px; text-decoration: none; color: #fff;
+    font-size: 14px; font-weight: 700; border: 1px solid #333; transition: all 0.3s ease;
+}
+.nav-btn:hover { transform: scale(1.1); color: #fff; }
+.btn-fooldal:hover { background: #ef4444; border-color: #ef4444 !important; }
+.btn-szabalyzat:hover { background: #3b82f6; border-color: #3b82f6 !important; }
+.btn-info:hover { background: #4ade80; border-color: #4ade80 !important; }
+
+.team-section { text-align: center; padding: 40px 20px; }
+.main-title { font-size: 50px; font-weight: 900; margin-bottom: 60px; letter-spacing: 2px; }
+#staff-text { color: #4ade80; transition: color 0.6s ease; }
+.team-row { display: flex; justify-content: center; gap: 30px; margin-bottom: 40px; flex-wrap: wrap; }
+
+.member-card {
+    background: #0f0f0f; width: 320px; padding: 40px 20px; border-radius: 40px;
+    position: relative; border: 1px solid #1a1a1a; transition: all 0.4s ease;
+}
+.member-card::before {
+    content: ""; position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+    width: 40%; height: 4px; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;
+}
+
+.card-icon { 
+    background: #1a1a1a; width: 85px; height: 85px; display: flex; align-items: center; justify-content: center; 
+    margin: 0 auto 25px; border-radius: 25px; overflow: hidden; padding: 0; border: 2px solid rgba(255,255,255,0.05);
+}
+.card-icon img { width: 100%; height: 100%; object-fit: cover; }
+
+.emoji-icon { font-size: 60px; margin-bottom: 20px; display: block; transition: 0.3s; }
+.member-card:hover .emoji-icon { transform: scale(1.2) rotate(10deg); }
+
+.t-glow::before { background: #ef4444; }
+.t-glow:hover { border-color: #ef4444; box-shadow: 0 0 35px rgba(239, 68, 68, 0.4); transform: translateY(-10px); background: linear-gradient(145deg, #2a0a0a 0%, #0f0f0f 100%); }
+.m-glow::before { background: #3b82f6; }
+.m-glow:hover { border-color: #3b82f6; box-shadow: 0 0 35px rgba(59, 130, 246, 0.4); transform: translateY(-10px); background: linear-gradient(145deg, #0a142a 0%, #0f0f0f 100%); }
+.f-glow::before { background: #94a3b8; }
+.f-glow:hover { border-color: #94a3b8; box-shadow: 0 0 35px rgba(148, 163, 184, 0.4); transform: translateY(-10px); background: linear-gradient(145deg, #1f242b 0%, #0f0f0f 100%); }
+.fa-glow::before { background: #a855f7; }
+.fa-glow:hover { border-color: #a855f7; box-shadow: 0 0 35px rgba(168, 85, 247, 0.4); transform: translateY(-10px); background: linear-gradient(145deg, #1a0a2a 0%, #0f0f0f 100%); }
+.s-glow::before { background: #facc15; }
+.s-glow:hover { border-color: #facc15; box-shadow: 0 0 35px rgba(250, 204, 21, 0.5); transform: translateY(-10px); background: linear-gradient(145deg, #2a260a 0%, #0f0f0f 100%); }
+
+.name { font-size: 24px; font-weight: 800; margin-bottom: 5px; }
+.rank { font-size: 11px; font-weight: 700; text-transform: uppercase; display: block; margin-bottom: 15px; }
+.tulaj { color: #ef4444; }
+.manager { color: #3b82f6; }
+.fejleszto { color: #94a3b8; }
+.foadmin { color: #a855f7; }
+.staff { color: #facc15; }
+.desc { font-size: 13px; color: #555; font-style: italic; line-height: 1.5; }
+
+.member-list { max-height: 0; opacity: 0; transition: 0.5s; overflow: hidden; }
+.dropdown:hover .member-list { max-height: 500px; opacity: 1; margin-top: 25px; }
+.sub-member { display: flex; align-items: center; gap: 12px; padding: 12px; border-top: 1px solid rgba(255,255,255,0.05); }
+.small-tag { font-size: 9px; padding: 3px 8px; border-radius: 5px; font-weight: 900; min-width: 65px; text-align: center; }
+.fadmin { background: #a855f7; color: #fff; }
+.adminplus { background: #3b82f6; color: #fff; }
+.admin-simple { background: #4ade80; color: #000; }
+.mod { background: #facc15; color: #000; }
+.help { background: #94a3b8; color: #000; }

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McJoin - Vezetőség</title>
+    <link rel="stylesheet" href="staffteam.css">
+    <link href="https://googleapis.com" rel="stylesheet">
+</head>
+<body id="main-body">
+
+    <header>
+        <div class="nav-container">
+            <div class="logo" id="main-logo">McJoin <span id="logo-sub">Info</span></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="nav-btn btn-fooldal">Főoldal</a></li>
+                    <li><a href="szabalyzat.html" class="nav-btn btn-szabalyzat">Szabályzat</a></li>
+                    <li><a href="szerverfejlesztés.html" class="nav-btn btn-info">Szerver információk</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="team-section">
+            <h1 class="main-title" id="title-text">VEZETŐSÉG & <span id="staff-text">STAFF</span></h1>
+
+            <div class="team-row first-row">
+                <div class="member-card fix t-glow" onmouseover="updateTheme('#ef4444', '#2a0a0a')">
+                    <div class="card-icon"><img src="Csirke.png" alt=""></div>
+                    <h3 class="name">Csirke</h3>
+                    <span class="rank tulaj">Tulajdonos</span>
+                    <p class="desc">"A szerver megálmodója és vezetője."</p>
+                </div>
+
+                <div class="member-card fix m-glow" onmouseover="updateTheme('#3b82f6', '#0a142a')">
+                    <div class="card-icon"><img src="kyakzee.png" alt=""></div>
+                    <h3 class="name">kyakzee</h3>
+                    <span class="rank manager">Community Manager</span>
+                    <p class="desc">"A közösségi kapcsolatokért felelős vezető."</p>
+                </div>
+
+                <div class="member-card fix f-glow" onmouseover="updateTheme('#94a3b8', '#1f242b')">
+                    <div class="card-icon"><img src="Krypto.png" alt=""></div>
+                    <h3 class="name">Krypto</h3>
+                    <span class="rank fejleszto">Developer</span>
+                    <p class="desc">"A kódok és rendszerek mestere."</p>
+                </div>
+            </div>
+
+            <div class="team-row second-row">
+                <div class="member-card dropdown fa-glow" onmouseover="updateTheme('#a855f7', '#1a0a2a')">
+                    <div class="card-icon"><img src="Marchello.png" alt=""></div>
+                    <h3 class="name">Admin Csapat I.</h3>
+                    <span class="rank foadmin">Marchello</span>
+                    <div class="member-list">
+                        <div class="sub-member"><span class="small-tag fadmin">FŐADMIN</span><p>Marchello</p></div>
+                        <div class="sub-member"><span class="small-tag adminplus">ADMIN+</span><p>Példa_Név</p></div>
+                        <div class="sub-member"><span class="small-tag admin-simple">ADMIN</span><p>Példa_Név</p></div>
+                    </div>
+                </div>
+
+                <div class="member-card dropdown fa-glow" onmouseover="updateTheme('#a855f7', '#1a0a2a')">
+                    <div class="card-icon"><img src="Karolyakirally.png" alt=""></div>
+                    <h3 class="name">Admin Csapat II.</h3>
+                    <span class="rank foadmin">Karolyakirally</span>
+                    <div class="member-list">
+                        <div class="sub-member"><span class="small-tag fadmin">FŐADMIN</span><p>Karolyakirally</p></div>
+                        <div class="sub-member"><span class="small-tag adminplus">ADMIN+</span><p>Példa_Név</p></div>
+                        <div class="sub-member"><span class="small-tag admin-simple">ADMIN</span><p>Példa_Név</p></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-row third-row">
+                <div class="member-card dropdown s-glow" onmouseover="updateTheme('#facc15', '#2a260a')">
+                    <div class="emoji-icon">👥</div>
+                    <h3 class="name">Staff Csapat</h3>
+                    <span class="rank staff">Moderátor & Helper</span>
+                    <div class="member-list">
+                        <div class="sub-member"><span class="small-tag mod">MOD</span><p>Zsoltsza</p></div>
+                        <div class="sub-member"><span class="small-tag help">HELP</span><p>-</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function updateTheme(mainColor, bgColor) {
+            document.getElementById('main-body').style.background = `radial-gradient(circle at center, ${bgColor} 0%, #050505 100%)`;
+            document.getElementById('main-logo').style.color = mainColor;
+            document.getElementById('staff-text').style.color = mainColor;
+            const btns = document.querySelectorAll('.nav-btn');
+            btns.forEach(btn => { btn.style.borderColor = mainColor + '44'; });
+        }
+    </script>
+</body>
+</html>
