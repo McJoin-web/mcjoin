@@ -3,38 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>McJoin | Hamarosan</title>
-    <link rel="stylesheet" href="főoldal.css">
-    <link href="https://googleapis.com" rel="stylesheet">
+    <title>Szerver költözés</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #2c2f33;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #23272a;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            max-width: 500px;
+            width: 90%;
+        }
+
+        h1 {
+            color: #ff4757;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            color: #ffffff;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #5865F2;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #4752c4;
+            transform: scale(1.05);
+        }
+
+        .icon {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
 
-    <div class="background-overlay"></div>
-
-    <nav class="main-nav">
-        <div class="nav-container">
-            <a href="index.html" class="nav-logo">MCJOIN</a>
-            <div class="nav-links">
-                <a href="szerver-info.html">Szerver infó</a>
-                <a href="staffteam.html">Staff Team</a>
-                <a href="szabalyzat.html">Szabályzat</a>
-            </div>
-        </div>
-    </nav>
-
-    <main class="content">
-        <div class="brand">PROJEKT INDUL</div>
-        <h1>VALAMI NAGY<br>KÉSZÜL.</h1>
-        <p>A szerver jelenleg fejlesztés alatt áll. Gőzerővel dolgozunk a funkciókon, hogy a legjobb élményt nyújthassuk neked.</p>
-        
-        <div class="status-badge">
-            ÁLLAPOT: <span>FEJLESZTÉS ALATT</span>
-        </div>
-
-        <div class="cta-area">
-            <a href="https://discord.gg/hh3beFK2SQ" class="btn-discord">CSATLAKOZZ A DISCORDHOZ</a>
-        </div>
-    </main>
+    <div class="container">
+        <div class="icon">👋</div>
+        <h1>Fontos üzenet! (csirke)</h1>
+        <p>
+            Bizonyos okok miatt kiléptem az eddigi szerverből. 
+            Szeretném, ha a közösség együtt maradna, ezért kérlek, csatlakozzatok az új helyre!
+        </p>
+        <a href="https://discord.gg/TWSzA5vxAR" class="btn" target="_blank">Csatlakozás az új szerverhez</a>
+    </div>
 
 </body>
 </html>
